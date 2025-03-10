@@ -2,9 +2,7 @@
 # */contest code/
 
 # Ignore "private" and "contest code" folders in each module
-setup/Framework for Pre-Recorded Video-For Teacher.docx
-setup/Framework for Pre-Recorded Video-For Teacher.pdf
-setup/ostad logos/
+setup/
 
 Module 1/private/
 # Module 1/contest code/
@@ -26,7 +24,7 @@ Module 7/private/
 # Module 7/contest code/
 Module 8/private/
 Module 8/assignment code/
-Module 8/contest code/
+# Module 8/contest code/
 Module 9/private/
 Module 9/assignment code/
 Module 9/contest code/
