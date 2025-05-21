@@ -1,3 +1,63 @@
+// **All Permutation**
+
+// **Problem Statement**
+// You are given a string **S** of all **unique characters**. Your task is to print **all permutations** of the string (i.e., all possible arrangements of the characters) in **lexicographically increasing order**.
+
+// ---
+
+// **Input**
+// A single line containing a string **S** of unique lowercase English letters.
+
+// **Output**
+// Print all permutations of **S**, one per line, in **lexicographically increasing order**.
+
+// ---
+
+// **Constraints**
+
+// * 1 ≤ |S| ≤ 8
+// * **S** contains only lowercase English letters and all characters are **unique**.
+
+// ---
+
+// **Example 1**
+// **Input:**
+
+// ```
+// bac
+// ```
+
+// **Output:**
+
+// ```
+// abc
+// acb
+// bac
+// bca
+// cab
+// cba
+// ```
+
+// **Example 2**
+// **Input:**
+
+// ```
+// sob
+// ```
+
+// **Output:**
+
+// ```
+// bos
+// bso
+// obs
+// osb
+// sbo
+// sob
+// ```
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 

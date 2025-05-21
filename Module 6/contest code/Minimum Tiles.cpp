@@ -1,3 +1,45 @@
+// **Minimum Tiles**
+
+// **Problem Statement**
+// You are given two integers **N** and **M**. You want to tile a room of size **N × M**. You have an infinite number of square tiles of size **2^i × 2^i**, where **i = 0, 1, 2, ...**.
+// Your task is to find the **minimum number of tiles** required to completely fill the room.
+
+// **Input**
+// Two integers **N** and **M** — the dimensions of the room.
+
+// **Output**
+// Print a single integer — the minimum number of tiles needed.
+
+// **Constraints**
+// 1 ≤ N, M ≤ 10⁹
+
+// **Example 1**
+// **Input:**
+
+// ```
+// 5 6
+// ```
+
+// **Output:**
+
+// ```
+// 9
+// ```
+
+// **Example 2**
+// **Input:**
+
+// ```
+// 4 11
+// ```
+
+// **Output:**
+
+// ```
+// 8
+// ```
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
