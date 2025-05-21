@@ -1,3 +1,41 @@
+// Rotate Linked List
+
+// You are given N integers and an integer K (1 ≤ K ≤ N). Create a singly linked list with the N integers sequentially. A singly linked list is a linear data structure in which the elements are not stored in contiguous memory locations and each element is connected only to its next element using a pointer. Now, suppose you don't have any information, you only have the head pointer of the linked list. You don't even know the size of the linked list. Your task is to rotate the linked list K times counter-clockwise.
+
+// For example, if the given linked list is 1 -> 2 -> 3 -> 4 -> 5 and K is 3, then after rotating 1st time: 2 -> 3 -> 4 -> 5 -> 1, after rotating 2nd time: 3 -> 4 -> 5 -> 1 -> 2, after rotating 3rd time: 4 -> 5 -> 1 -> 2 -> 3.
+
+// Input: First line of the input contains two integers N and K. Next line contains N space separated integers, the values of the linked list in order.
+
+// Output: Print the elements of linked list after rotating K times counter-clockwise.
+
+// Constraints: 1 ≤ N ≤ 10000, 1 ≤ K ≤ N. All the provided integers are in range \[1, 10000].
+
+// Example 1:
+// Input:
+// 5 2
+// 1 2 3 4 5
+// Output:
+// 3 4 5 1 2
+
+// Example 2:
+// Input:
+// 5 5
+// 1 2 3 4 5
+// Output:
+// 1 2 3 4 5
+
+// Example 3:
+// Input:
+// 5 1
+// 1 2 3 4 5
+// Output:
+// 2 3 4 5 1
+
+// Note: This problem can be solved without using linked list. But you should solve this problem as guided for your own betterment.
+
+
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
