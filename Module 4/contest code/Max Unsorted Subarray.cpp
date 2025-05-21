@@ -1,3 +1,44 @@
+// Max Unsorted Subarray
+
+// Problem Statement
+// You are given an array of integers. Your task is to find the maximum subarray such that sorting this subarray will make the entire array sorted.
+
+// Input
+// The input consists of two lines:
+
+// The first line contains an integer N — the size of the array.
+
+// The second line contains N space-separated integers, each between −10⁹ and 10⁹.
+
+// Output
+// Print two integers: the starting and ending indices (0-based) of the subarray.
+// If the array is already sorted and no such subarray is needed, print -1.
+
+// Constraints
+
+// 2 ≤ N ≤ 10⁵
+
+// Each integer in the array is between −10⁹ and 10⁹
+
+// Example
+
+// Input  1
+// 3  
+// 2 -1 3  
+
+// Output  1
+// 1 2  
+
+// Input  2
+// 5  
+// 1 2 3 3 5  
+
+// Output  2
+// -1  
+// Notes
+// In the first example, sorting the subarray [2, -1] (i.e., from index 0 to 1) results in the full array being sorted.
+// In the second example, the array is already sorted, so no subarray needs to be sorted.
+
 #include <bits/stdc++.h>
 using namespace std;
      

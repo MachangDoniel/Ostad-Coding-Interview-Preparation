@@ -1,3 +1,51 @@
+// Rotate The Array
+
+// Problem Statement
+// You are given an array of integers and an integer K.
+
+// If K = 0, rotate the array right by one position.
+
+// If K = 1, rotate the array left by one position.
+
+// Input
+// The input consists of two lines:
+
+// The first line contains two integers N and K.
+
+// The second line contains N space-separated integers between 1 and N.
+
+// Output
+// Print the array after the specified rotation.
+
+// Constraints
+
+// 1 ≤ N ≤ 5000
+
+// 0 ≤ K ≤ 1
+
+// Every integer in the array is between 1 and N.
+
+// Example
+
+// Input  1
+// 4 0  
+// 1 2 3 4  
+
+// Output  1
+// 4 1 2 3  
+
+// Input  2
+// 6 1  
+// 1 2 5 4 3 5  
+
+// Output  2
+// 2 5 4 3 5 1  
+// Notes
+// In the first example, K = 0, so rotate right by one: (1, 2, 3, 4) becomes (4, 1, 2, 3).
+
+
+
+
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,3 +1,46 @@
+// 3 Sum
+
+// Problem Statement
+// You are given an array A of unique integers of size N. Your task is to count the number of index triplets i, j, k such that 1 ≤ i < j < k ≤ N and A[i] + A[j] + A[k] = 0.
+
+// Input
+// The input consists of two lines:
+
+// The first line contains an integer N — the number of elements in the array.
+
+// The second line contains N space-separated unique integers, each between −10⁹ and 10⁹.
+
+// Output
+// Print a single integer — the number of triplets (i, j, k) that satisfy the condition A[i] + A[j] + A[k] = 0.
+
+// Constraints
+
+// 1 ≤ N ≤ 10³
+
+// All elements of the array are unique and in the range [−10⁹, 10⁹]
+
+// Example
+
+// Input  1
+// 6  
+// 1 -2 3 -4 5 6  
+
+// Output  1
+// 2  
+
+// Input  2
+// 3  
+// 1 2 5  
+
+// Output  2
+// 0  
+// Notes
+// In the first example, the valid triplets are:
+
+// 1 + 3 + (−4) = 0
+
+// −2 + (−4) + 6 = 0
+
 #include <bits/stdc++.h>
 using namespace std;
      
