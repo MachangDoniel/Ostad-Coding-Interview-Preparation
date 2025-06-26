@@ -36,22 +36,42 @@
 // {{}{}}
 // {{{}}}
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// typedef long long ll;
+
+// int main() {
+//     int n; cin>>n;
+//     vector<ll>dp(n+1,0);
+//     dp[0]=1;
+
+//     for(int i=1;i<=n;i++){
+//         for(int j=0;j<i;j++){
+//             dp[i]+=dp[j]*dp[i-1-j];
+//         }
+//     }
+
+//     cout<<dp[n]<<endl;
+//     return 0;
+// }
+
 #include <bits/stdc++.h>
 using namespace std;
 
 typedef long long ll;
 
-int main() {
-    int n; cin>>n;
-    vector<ll>dp(n+1,0);
-    dp[0]=1;
-
-    for(int i=1;i<=n;i++){
-        for(int j=0;j<i;j++){
-            dp[i]+=dp[j]*dp[i-1-j];
-        }
+ll catalan(int n) {
+    ll res = 1;
+    for (int i = 0; i < n; ++i) {
+        res = res * (2 * n - i) / (i + 1);
     }
+    return res / (n + 1);
+}
 
-    cout<<dp[n]<<endl;
+int main() {
+    int N;
+    cin >> N;
+    cout << catalan(N) << endl;
     return 0;
 }
