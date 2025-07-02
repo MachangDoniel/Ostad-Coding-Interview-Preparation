@@ -4,33 +4,33 @@ const int N = 20;
 #define ll long long
 int ar[20];
 ll dp[20][20][2][2];
-ll fun(int pos, int st, bool f1, bool f2) {
+ll fun(int pos, int st, bool tight, bool cmpWithMirror) {
 	if (pos == 20) {
-		return (f1 | (f2 == 2 || f2 == 0));
+		return (tight | (cmpWithMirror == 2 || cmpWithMirror == 0));
 	}
 	if (st && (st + (19 - st) / 2) + 1 == pos) {
-		return (f1 | (f2 == 2 || f2 == 0));
+		return (tight | (cmpWithMirror == 2 || cmpWithMirror == 0));
 	}
-	if (dp[pos][st][f1][f2] != -1)return dp[pos][st][f1][f2];
-	int l = 0, r = ar[pos];
-	if (f1)r = 9;
+	if (dp[pos][st][tight][cmpWithMirror] != -1)return dp[pos][st][tight][cmpWithMirror];
+	int start = 0, limit = ar[pos];
+	if (tight) limit = 9;
 	ll ret = 0;
-	for (int i = l; i <= r; i++) {
-		if (i) {
+	for (int digit = start; digit <= limit; digit++) {
+		if (digit) {
 			if (!st)st = pos;
 		}
 		if (st) {
 			int sym = 19 - pos + st;
-			int ff2 = f2;
-			if (i > ar[sym])ff2 = 1;
-			else if (i < ar[sym])ff2 = 0;
-			ret += fun(pos + 1, st, f1 | (i < ar[pos]), ff2);
+			int tempCmpWithMirror = cmpWithMirror;
+			if (digit > ar[sym]) tempCmpWithMirror = 1;
+			else if (digit < ar[sym]) tempCmpWithMirror = 0;
+			ret += fun(pos + 1, st, tight | (digit < ar[pos]), tempCmpWithMirror);
 		}
 		else {
-			ret += fun(pos + 1, st, f1 | (i < ar[pos]), f2);
+			ret += fun(pos + 1, st, tight | (digit < ar[pos]), cmpWithMirror);
 		}
 	}
-	return dp[pos][st][f1][f2] = ret;
+	return dp[pos][st][tight][cmpWithMirror] = ret;
 
 }
 void set_ar(ll x) {
